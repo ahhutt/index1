@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Js By Ahmed </title>
+    <link href="index.css" rel="stylesheet"> 
+    <style>
+        
+           
+    </style>
+</head>
+<body>
+  <div class="crud"></div>
+  <div class="head">
+    <h2>ToTa</h2>
+    <p>PRODUCT MANGMENT SYSTEM</p>
+  </div>
+
+  <div class="inputs">
+    <input placeholder="title" type="text" id="title">
+  </div>
+
+<div class="price">
+  <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+  <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+  <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+  <input onkeyup="getTotal()" type="number" id="discound" placeholder="discound">
+ <small id="total"></small>
+</div>
+<input type="number" id="cound" placeholder="cound">
+<input type="text" id="category" placeholder="category">
+<button id="submit">Create</button>
+
+
+  <div class="output">
+    <div class="searchBlock">
+      <input onkeyup=searchDate(this.value)  type="text" id="search" placeholder="Search">
+      <div class="btnSearch">
+        <button onclick="getsearchMood(this.id)" id="searchTitle">search By Titel</button>
+        <button onclick="getsearchMood(this.id)" id="searchCategory">search By Category</button>
+
+
+      </div>
+      <table>
+        <div id="deletALL"></div>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+           <th>price</th>
+           <th>taxes</th>
+           <th>ads</th>
+           <th>discound</th>
+           <th>total</th>
+           <th>category</th>
+           <th>updade</th>
+           <th>delet</th>
+        </tr>
+
+        <tbody id="tbody">
+          
+            <td><button id="updade">updade</button></td>
+            <td><button id="updade">delet</button></td>
+          
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="index.js">    </script>
+</body>
+</html> 
